@@ -59,11 +59,9 @@
   --bs-font-serif: "Times New Roman", Times, serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(255, 255, 255, 0)
-  );
+  --bs-gradient: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0));
   --bs-body-font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -88,9 +86,92 @@
 
 /* Global styles */
 
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0.5em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.global-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0;
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5em;
+}
+
+.global-nav {
+  display: none;
+}
+
+#global-nav-toggle {
+  background-color: white;
+  border-radius: 10%;
+  color: #4b5e26;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: var(--bs-body-font-family);
+}
+
+#global-nav-toggle .icon {
+  background-color: white;
+  fill: #4b5e26;
+
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5em;
+}
+
+.global-nav__section-heading {
+  display: none;
+}
+
+.global-nav__split-button {
+  display: none;
+}
+
+.global-header__right button,
+.global-header__right a {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.site-title span {
+  color: white;
+}
+
+
 * {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
@@ -133,11 +214,9 @@ a:hover {
 
 /* Title and logo styling */
 
-.site-title {
-  display: flex;
-  align-items: center;
-}
-.site-title > span {
+
+
+.site-title>span {
   font-size: 1rem;
   margin-left: 0.3em;
 }
@@ -150,6 +229,17 @@ a:hover {
   border-top: 34px solid var(--bs-light-green);
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
+}
+
+.tab-and-dis {
+  background-color: #f6f5f0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0.25em 1em
+}
+
+.tab-and-dis p {
+  margin: 0;
 }
 
 /* Utility styles */
@@ -170,4 +260,48 @@ a:hover {
 svg {
   background-color: var(--bs-black);
   fill: white;
+}
+
+#hero-id {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.park-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.container-class {
+  position: absolute;
+  bottom: 5px; 
+  left: 0px;
+  width: 100%;
+  color: white;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  padding-left: 20px;
+}
+
+#park-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#park-subtitle {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
 }
