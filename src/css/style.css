@@ -265,10 +265,10 @@ svg {
 #hero-id {
   width: 100%;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.hero-image {
+.hero-banner__image {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -284,9 +284,20 @@ svg {
   z-index: 1;
 }
 
-.container-class {
+.hero-banner__title {
+  color : white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero-banner__content a{
+  color: white;
+  text-decoration: none;
+}
+
+.hero-banner__content {
   position: absolute;
-  bottom: 0px; 
+  bottom: 0px;
   left: 0px;
   width: 100%;
   color: white;
@@ -310,7 +321,7 @@ svg {
 
 /* Park nav styling */
 
-.park-nav > ul {
+.park-nav>ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -320,6 +331,7 @@ svg {
   background-color: var(--bs-black);
   font-size: 0.8rem;
 }
+
 .park-nav a {
   display: flex;
   flex-direction: column;
@@ -327,10 +339,14 @@ svg {
   justify-content: center;
   /* height: 50px; */
   padding: 0.8em 2em;
+  color: white;
+  text-decoration: none;
 }
+
 .park-nav a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .park-nav svg {
   width: 24px;
   height: 24px;
@@ -360,3 +376,12 @@ svg {
   fill: white;
 } */
 
+/* end NPS1 */
+
+h1 {
+  padding: 0.5em 1em;
+}
+
+.description p {
+  padding: 0.5em 1em;
+}
