@@ -1,0 +1,25 @@
+.site-title>span {
+  font-size: 1rem;
+  margin-left: 0.3em;
+}
+
+.logo {
+  height: 0;
+  width: 0;
+  margin: 0.5em;
+  display: inline-block;
+  border-top: 34px solid var(--bs-light-green);
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
+
+.tab-and-dis {
+  background-color: #f6f5f0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0.25em 1em
+}
+
+.tab-and-dis p {
+  margin: 0;
+}
