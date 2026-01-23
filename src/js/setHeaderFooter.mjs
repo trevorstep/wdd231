@@ -8,7 +8,7 @@ function setHeaderInfo(data) {
   // update the title of the site. Notice that we can select things in the head just like in the body with querySelector
   document.querySelector("head > title").textContent = data.fullName;
   // set the banner image
-document.querySelector(".hero-banner__image").src = data.images[0].url;
+  document.querySelector(".hero-banner__image").src = data.images[0].url;
   // use the template function above to set the rest of the park specific info in the header
   document.querySelector(".hero-banner__content").innerHTML =
     parkInfoTemplate(data);
